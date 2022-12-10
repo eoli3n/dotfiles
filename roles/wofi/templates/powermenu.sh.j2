@@ -4,15 +4,15 @@ action=$(echo -e "suspend\nlock\nlogout\nshutdown\nreboot" | wofi -d -p "power:"
 
 if [[ "$action" == "lock" ]]
 then
-    swaylock-fancy
+    swaylock
 fi
 
 if [[ "$action" == "suspend" ]]
 then
 {% if ansible_distribution_release == "void" %}
-    sudo zzz
+    swaylock && sudo zzz
 {% else %}
-    swaylock-fancy && systemctl suspend && echo '*/reconnect' >~/.weechat/weechat_fifo
+    swaylock && systemctl suspend
 {% endif %}
 fi
 

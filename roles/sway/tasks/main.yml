@@ -15,16 +15,6 @@
     src: sway.fish.j2
     dest: ~/.config/fish/conf.d/sway.fish
 
-- name: create swaylock dir config
-  file:
-    path: ~/.config/swaylock/
-    state: directory
-
-- name: copy swaylock config
-  copy:
-    src: swaylock.config
-    dest: ~/.config/swaylock/config
-
 - name: copy gsettings importer
   copy:
     src: import-gsettings
@@ -46,3 +36,8 @@
     src: "kanshi/by_host/{{ ansible_hostname }}/config"
     dest: ~/.config/kanshi/
   failed_when: false
+
+- name: fish swaylock-fancy
+  copy:
+    src: swaylock.fish
+    dest: ~/.config/fish/functions
