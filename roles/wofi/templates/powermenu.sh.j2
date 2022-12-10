@@ -4,15 +4,15 @@ action=$(echo -e "suspend\nlock\nlogout\nshutdown\nreboot" | wofi -d -p "power:"
 
 if [[ "$action" == "lock" ]]
 then
-    swaylock
+    swaylock-fancy --font "JetBrains-Mono-Light"
 fi
 
 if [[ "$action" == "suspend" ]]
 then
 {% if ansible_distribution_release == "void" %}
-    swaylock && sudo zzz
+    swaylock-fancy --font "JetBrains-Mono-Light" && sudo zzz
 {% else %}
-    swaylock && systemctl suspend
+    swaylock-fancy --font "JetBrains-Mono-Light" && systemctl suspend
 {% endif %}
 fi
 
