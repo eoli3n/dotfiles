@@ -41,3 +41,19 @@
   copy:
     src: swaylock.fish
     dest: ~/.config/fish/functions
+
+- name: create xdg-desktop-wlr config dir
+  file:
+    path: ~/.config/xdg-desktop-portal-wlr/
+    state: directory
+
+- name: configure xdg-desktop-wlr to select display
+  copy:
+    src: config
+    dest: ~/.config/xdg-desktop-portal-wlr/config
+
+- name: configure zoom for wayland sharing
+  copy:
+    src: zoomus.conf
+    dest: /home/user/.var/app/us.zoom.Zoom/config/zoomus.conf
+
