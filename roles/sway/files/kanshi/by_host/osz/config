@@ -5,7 +5,7 @@ profile {
 }
 
 profile {
-    output "DP-3" position 0,0 mode 1920x1080
+    output "Dell Inc. DELL P2417H CW6Y77AG05NB" position 0,0 mode 1920x1080
     output "eDP-1" position 1920,405 mode 1920x1080 scale 1.6
 }
 
