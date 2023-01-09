@@ -61,7 +61,7 @@
         "format": "<span foreground='#929292'></span> vpn",
         "interval": 5,
         "exec" : "echo a",
-        "exec-if" : "pgrep openvpn"
+        "exec-if" : "pgrep openconnect"
     },
     "backlight": {
         "format": "<span foreground='#929292'>{icon}</span> {percent}%",
