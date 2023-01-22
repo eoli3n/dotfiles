@@ -1,0 +1,3 @@
+---
+- name: set default app for directories
+  shell: xdg-mime default nemo.desktop inode/directory
