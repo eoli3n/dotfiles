@@ -21,7 +21,7 @@
     - role: git
       tags: git,cli
     - role: ssh
-      tags: ssh 
+      tags: ssh
     - role: htop
       tags: htop
 
@@ -64,4 +64,7 @@
       when: ansible_user_id != 'root'
     - role: zim
       tags: zim
+      when: ansible_user_id != 'root'
+    - role: mime
+      tags: mime
       when: ansible_user_id != 'root'
