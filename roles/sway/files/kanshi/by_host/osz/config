@@ -1,14 +1,14 @@
 profile {
     output "ONKYO Corporation Sound System 0x00000000" disable
-    output "Dell Inc. DELL P2417H CW6Y77AG05NB" position 0,1080 mode 1920x1080
-    output "Unknown 0x091D 0x00000000" position 1920,1080 mode 1920x1080 scale 1
+    output "Dell Inc. DELL P2417H CW6Y77AG05NB" position 1199,1080 mode 1920x1080
+    output "eDP-1" position 0,1486 mode 1920x1080 scale 1
 }
 
 profile {
-    output "Dell Inc. DELL P2417H CW6Y77AG05NB" position 0,0 mode 1920x1080
-    output "eDP-1" position 1920,405 mode 1920x1080 scale 1.6
+    output "Dell Inc. DELL P2417H CW6Y77AG05NB" position 1199,1080 mode 1920x1080
+    output "eDP-1" position 0,1486 mode 1920x1080 scale 1
 }
 
 profile {
-    output "eDP-1" position 0,0 mode 1920x1080 scale 1
+    output "eDP-1" position 0,0 mode 1920x1080 scale 1.4
 }
