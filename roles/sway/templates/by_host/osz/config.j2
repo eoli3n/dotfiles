@@ -9,8 +9,8 @@ set $screen "DP-3"
 #output $laptop pos 1920 1560 res 1920x1080 scale 1.8
 
 # toggle proj
-bindsym --no-repeat $mod+p output $proj toggle; output $screen toggle; output $laptop toggle
-bindsym --no-repeat $mod+Shift+p output $laptop toggle
+bindsym --no-repeat $mod+p output $proj toggle
+bindsym --no-repeat $mod+Shift+p output $screen toggle; output $laptop toggle
 
 # start kanshi
 exec_always "pkill kanshi; kanshi"
