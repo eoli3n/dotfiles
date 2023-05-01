@@ -1,7 +1,7 @@
 ---
-font: jetbrains mono
+font: jetbrains mono light
 font_size: 10
-font_icon: 
+font_icon:
   - FontAwesome5FreeRegular
   - FontAwesome5FreeSolid
   - FontAwesome5Brands
