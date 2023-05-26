@@ -3,10 +3,10 @@
   file:
     path: ~/.config/pipewire/
     state: directory
-  when: ansible_distribution == 'void'
+  when: ansible_distribution == 'Void'
 
 - name: configure pipewire
   copy:
     src: pipewire.conf
     dest: ~/.config/pipewire/pipewire.conf
-  when: ansible_distribution == 'void'
+  when: ansible_distribution == 'Void'
