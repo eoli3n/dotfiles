@@ -5,7 +5,6 @@ font_icon:
   - FontAwesome5FreeRegular
   - FontAwesome5FreeSolid
   - FontAwesome5Brands
-  - Noto Sans
 gtk_theme: Adwaita-dark
 icon_theme: Papirus-Dark
 git_name: eoli3n
