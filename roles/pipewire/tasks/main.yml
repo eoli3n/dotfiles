@@ -1,12 +1,18 @@
 ---
 - name: create pipewire directory
   file:
-    path: ~/.config/pipewire/
+    path: '{{ item }}'
     state: directory
+  loop:
+    - ~/.config/pipewire/
+    - ~/.config/pipewire/pipewire.conf.d
   when: ansible_distribution == 'Void'
 
 - name: configure pipewire
   copy:
-    src: pipewire.conf
-    dest: ~/.config/pipewire/pipewire.conf
+    src: '{{ item }}'
+    dest: ~/.config/pipewire/pipewire.conf.d/
+  loop:
+    - 10-wireplumber.conf
+    - 20-pipewire-pulse.conf
   when: ansible_distribution == 'Void'
