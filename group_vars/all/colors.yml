@@ -1,16 +1,4 @@
 ---
-font: jetbrains mono light
-font_size: 10
-font_icon:
-  - FontAwesome5FreeRegular
-  - FontAwesome5FreeSolid
-  - FontAwesome5Brands
-gtk_theme: Adwaita-dark
-icon_theme: Papirus-Dark
-git_name: eoli3n
-git_mail: jonathan.kirszling@runbox.com
-caldav: https://dav.runbox.com/
-
 # Black + DarkGrey
 color0:  '#282a36'
 color8:  '#686868'
