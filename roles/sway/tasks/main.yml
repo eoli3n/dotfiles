@@ -31,10 +31,10 @@
     path: ~/.config/kanshi
     state: directory
 
-- name: copy kanshi config file
-  copy:
-    src: "kanshi/by_host/{{ ansible_hostname }}/config"
-    dest: ~/.config/kanshi/
+- name: template kanshi config file
+  template:
+    src: "kanshi.config.j2"
+    dest: ~/.config/kanshi/config
   failed_when: false
 
 - name: fish swaylock-fancy

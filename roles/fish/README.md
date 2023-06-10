@@ -2,12 +2,6 @@
 
 - ``cli`` dir is the basedir and will be sync on all hosts
 - ``desktop`` dir will be sync only on desktop hosts.
-- If you want to configure something for a specific host, use this snippets in *fish* script:
-```
-if test "$hostname" = "host1" 
-    set -x key "value"
-end
-```
 
 ```
 fish

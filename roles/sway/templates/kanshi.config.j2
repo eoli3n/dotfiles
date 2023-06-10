@@ -1,0 +1,14 @@
+profile {
+    output "{{ (displays | selectattr('name', 'eq', 'screen2')).0.id }}" disable
+    output "{{ (displays | selectattr('name', 'eq', 'screen1')).0.id }}" position {{ (displays | selectattr('name', 'eq', 'screen1')).0.x }},{{ (displays | selectattr('name', 'eq', 'screen1')).0.y }} mode {{ (displays | selectattr('name', 'eq', 'screen1')).0.mode }} scale {{ (displays | selectattr('name', 'eq', 'screen1')).0.scale }}
+    output "{{ (displays | selectattr('name', 'eq', 'laptop')).0.id }}" position {{ (displays | selectattr('name', 'eq', 'laptop')).0.x }},{{ (displays | selectattr('name', 'eq', 'laptop')).0.y }} mode {{ (displays | selectattr('name', 'eq', 'laptop')).0.mode }} scale {{ (displays | selectattr('name', 'eq', 'laptop')).0.scale }}
+}
+
+profile {
+    output "{{ (displays | selectattr('name', 'eq', 'screen1')).0.id }}" position {{ (displays | selectattr('name', 'eq', 'screen1')).0.x }},{{ (displays | selectattr('name', 'eq', 'screen1')).0.y }} mode {{ (displays | selectattr('name', 'eq', 'screen1')).0.mode }} scale {{ (displays | selectattr('name', 'eq', 'screen1')).0.scale }}
+    output "{{ (displays | selectattr('name', 'eq', 'laptop')).0.id }}" position {{ (displays | selectattr('name', 'eq', 'laptop')).0.x }},{{ (displays | selectattr('name', 'eq', 'laptop')).0.y }} mode {{ (displays | selectattr('name', 'eq', 'laptop')).0.mode }} scale {{ (displays | selectattr('name', 'eq', 'laptop')).0.scale }}
+}
+
+profile {
+    output "{{ (displays | selectattr('name', 'eq', 'laptop')).0.id }}" position 0,0 mode {{ (displays | selectattr('name', 'eq', 'laptop')).0.mode }} scale {{ (displays | selectattr('name', 'eq', 'laptop')).0.scale }}
+}

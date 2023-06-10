@@ -19,26 +19,26 @@
     src: Trolltech.conf
     dest: ~/.config/
 
-- name: Link Xdefaults
-  file:
-    src: ~/.Xresources
-    dest: ~/.Xdefaults
-    state: link
-    force: yes
-
-- name: Create .Xresources.d dir
-  file:
-    path: ~/.Xresources.d
-    state: directory
-
-- name: Configure Cursors
-  copy:
-    src: cursor
-    dest: ~/.Xresources.d/
-
-- name: Init Cursors in .Xresources
-  lineinfile:
-    path: ~/.Xresources
-    create: yes
-    state: present
-    line: '#include ".Xresources.d/cursor"'
+#- name: Link Xdefaults
+#  file:
+#    src: ~/.Xresources
+#    dest: ~/.Xdefaults
+#    state: link
+#    force: yes
+#
+#- name: Create .Xresources.d dir
+#  file:
+#    path: ~/.Xresources.d
+#    state: directory
+#
+#- name: Configure Cursors
+#  copy:
+#    src: cursor
+#    dest: ~/.Xresources.d/
+#
+#- name: Init Cursors in .Xresources
+#  lineinfile:
+#    path: ~/.Xresources
+#    create: yes
+#    state: present
+#    line: '#include ".Xresources.d/cursor"'

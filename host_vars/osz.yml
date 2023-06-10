@@ -1,0 +1,18 @@
+---
+displays:
+  - name: laptop
+    id: eDP-1
+    x: 548
+    y: 1388
+    mode: 1920x1080
+    scale: 1.4
+  - name: screen1
+    id: DP-3
+    x: 1920
+    y: 1080
+    mode: 1920x1080
+    scale: 1
+  - name: screen2
+    id: ONKYO Corporation Sound System Unknown
+    mode: 1920x1080
+    scale: 1

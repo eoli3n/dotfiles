@@ -192,7 +192,7 @@ for_window [title="Firefox - Indicateur de partage"] floating enable
 bindsym $mod+Prior move workspace to output left
 bindsym $mod+Next move workspace to output right
 
-{% include 'by_host/' + ansible_hostname + '/config.j2' ignore missing %}
+{% include 'hosts/sway/' + ansible_hostname + '/config.j2' ignore missing %}
 
 # exec background apps
 
