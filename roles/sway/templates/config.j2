@@ -133,6 +133,7 @@ bindsym $mod+Control+z exec zim
 bindsym $mod+Control+t exec nemo
 bindsym $mod+Control+p exec pavucontrol
 bindsym $mod+Control+b exec blueman-manager
+bindsym $mod+Control+w exec iwgtk
 
 # bindsym spotify
 bindsym $mod+Control+left exec playerctl -p spotify previous
@@ -186,6 +187,8 @@ assign [app_id="transmission-gtk"] $tag9
 for_window [app_id="transmission-gtk"] focus
 assign [app_id="pavucontrol"] $tag10
 for_window [app_id="pavucontrol"] focus
+assign [app_id="iwgtk"] $tag10
+for_window [app_id="iwgtk"] focus
 for_window [title="Firefox - Indicateur de partage"] floating enable
 
 # move workspace between screens
