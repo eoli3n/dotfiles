@@ -1,3 +1,3 @@
 .vagrant
 *.swp
-hosts
+./hosts
