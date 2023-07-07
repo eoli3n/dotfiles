@@ -1,0 +1,28 @@
+#INCLUDE####################################################
+# output configuration
+set $laptop "{{ (displays | selectattr('name', 'eq', 'laptop')).0.id }}"
+set $screen1 "{{ (displays | selectattr('name', 'eq', 'screen1')).0.id }}"
+set $screen2 "{{ (displays | selectattr('name', 'eq', 'screen2')).0.id }}"
+
+# dpms
+output * dpms on
+
+# turn of screen when laptop closed
+bindswitch --reload lid:on output $laptop disable
+bindswitch --reload lid:off output $laptop enable
+
+# assign workspace to screens
+workspace $tag1 output $screen1
+workspace $tag2 output $screen1
+workspace $tag3 output $screen2
+workspace $tag4 output $laptop
+workspace $tag5 output $screen2
+workspace $tag6 output $screen2
+workspace $tag7 output $screen1
+workspace $tag8 output $screen1
+workspace $tag9 output $laptop
+workspace $tag10 output $laptop
+
+# syncthing
+exec_always bash -c "pgrep -x syncthing || syncthing"
+#INCLUDE####################################################

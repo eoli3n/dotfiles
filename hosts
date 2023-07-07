@@ -1,0 +1,4 @@
+[cli]
+[desktop]
+osz ansible_connection=local
+
