@@ -7,12 +7,12 @@ displays:
     mode: 1920x1080
     scale: 1.4
   - name: screen1
-    id: DP-3
+    id: 'HP Inc. HP E24 G4 CN421202YN'
     x: 1920
     y: 1080
     mode: 1920x1080
     scale: 1
   - name: screen2
-    id: DP-5
+    id: 'ONKYO Corporation Sound System Unknown'
     mode: 1920x1080
     scale: 1
