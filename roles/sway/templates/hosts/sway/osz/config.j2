@@ -6,7 +6,7 @@ set $screen2 "{{ (displays | selectattr('name', 'eq', 'screen2')).0.id }}"
 
 # toggle proj
 bindsym --no-repeat $mod+p output $screen2 toggle
-bindsym --no-repeat $mod+Shift+p output $screen2 toggle; output $laptop toggle
+bindsym --no-repeat $mod+Shift+p output $screen1 toggle; output $laptop toggle
 
 # start kanshi
 exec_always "pkill kanshi; kanshi"
