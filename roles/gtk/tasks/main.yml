@@ -5,9 +5,7 @@
     state: directory
 
 - name: Configure GTK3
-  template:
-    src: settings.ini.j2
-    dest: ~/.config/gtk-3.0/settings.ini
+  shell: gsettings set org.gnome.desktop.interface gtk-theme Adwaita-dark
 
 - name: Configure GTK2
   template:
