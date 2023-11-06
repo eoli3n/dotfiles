@@ -1,0 +1,10 @@
+---
+- name: init nightly rustup
+  shell: rustup-init --default-toolchain nightly --no-modify-path -y
+  args:
+    creates: "$HOME/.cargo/bin"
+
+- name: configure cargo path
+  copy:
+    src: rustup.fish
+    dest: "$HOME/.config/fish/conf.d/"

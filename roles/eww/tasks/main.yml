@@ -1,0 +1,31 @@
+---
+- name: clone eww project
+  git:
+    repo: https://github.com/elkowar/eww
+    dest: "$HOME/dev/eww"
+
+- name: build eww
+  shell: cargo build --release --no-default-features --features=wayland
+  args:
+    creates: "$HOME/dev/eww/target/release/eww"
+    chdir: "$HOME/dev/eww/"
+
+- name: chmod eww
+  file:
+    path: "$HOME/dev/eww/target/release/eww"
+    mode: 0755
+
+- name: create eww config dir
+  file:
+    path: "$HOME/.config/eww"
+    state: directory
+
+- name: configure eww
+  template:
+    src: '{{ item.src }}'
+    dest: "$HOME/.config/eww/{{ item.dest }}"
+  loop:
+    - src: eww.scss.j2
+      dest: eww.scss
+    - src: eww.yuck.j2
+      dest: eww.yuck

@@ -68,3 +68,9 @@
     - role: mime
       tags: mime
       when: ansible_user_id != 'root'
+    - role: rustup
+      tags: rustup
+      when: ansible_user_id != 'root'
+    - role: eww
+      tags: eww
+      when: ansible_user_id != 'root'
