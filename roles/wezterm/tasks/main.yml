@@ -1,0 +1,5 @@
+---
+- name: configure wezterm
+  template:
+    src: wezterm.lua.j2
+    dest: "$HOME/.wezterm.lua"

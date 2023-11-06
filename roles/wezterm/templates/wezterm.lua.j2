@@ -1,0 +1,47 @@
+local wezterm = require 'wezterm'
+local config = {}
+
+if wezterm.config_builder then
+  config = wezterm.config_builder()
+end
+
+config.font =
+  wezterm.font('JetBrains Mono', { weight = 'Light'})
+config.font_size = 10.0
+config.hide_tab_bar_if_only_one_tab = true
+config.default_cursor_style = 'BlinkingBar'
+
+config.colors = {
+  foreground = '{{ color7 }}',
+  background = '#202020',
+  cursor_bg = '{{ color7 }}',
+  selection_fg = 'black',
+  selection_bg = '{{ color3 }}',
+  ansi = {
+    '{{ color0 }}',
+    '{{ color1 }}',
+    '{{ color2 }}',
+    '{{ color3 }}',
+    '{{ color4 }}',
+    '{{ color5 }}',
+    '{{ color6 }}',
+    '{{ color7 }}',
+  },
+  brights = {
+    '{{ color8}}',
+    '{{ color9 }}',
+    '{{ color10 }}',
+    '{{ color11 }}',
+    '{{ color12 }}',
+    '{{ color13 }}',
+    '{{ color14 }}',
+    '{{ color15 }}',
+  },
+}
+
+config.window_background_opacity = 0.9
+config.text_background_opacity = 1
+config.window_decorations = "NONE"
+
+config.hyperlink_rules = wezterm.default_hyperlink_rules()
+return config

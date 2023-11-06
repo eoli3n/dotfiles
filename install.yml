@@ -74,3 +74,6 @@
     - role: eww
       tags: eww
       when: ansible_user_id != 'root'
+    - role: wezterm
+      tags: wezterm
+      when: ansible_user_id != 'root'
