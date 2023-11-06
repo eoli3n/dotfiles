@@ -2,19 +2,25 @@
 displays:
   - name: laptop
     id: eDP-1
-    x: 0
-    y: 920
+    x: 5760
+    y: 720
     mode: 1920x1080
-    scale: 1.4
+    scale: 1.6
   - name: screen1
-    id: DP-3
-    x: 1280
+    id: DP-7
+    x: 0
     y: 0
     mode: 1920x1080
     scale: 1
   - name: screen2
-    id: DP-4
+    id: DP-5
     mode: 1920x1080
-    x: 3200
+    x: 1920
+    y: 0
+    scale: 1
+  - name: screen2
+    id: DP-6
+    mode: 1920x1080
+    x: 3840
     y: 0
     scale: 1
