@@ -19,7 +19,21 @@
     "clock": {
         "interval": 1,
         "format": "{:%d<span foreground='#929292'>%m</span><span foreground='#606060'>%y</span> %H<span foreground='#929292'>%M</span><span foreground='#606060'>%S</span>}",
-        "tooltip": false
+        "tooltip-format": "<tt><small>{calendar}</small></tt>",
+        "calendar": {
+                    "mode"          : "year",
+                    "mode-mon-col"  : 3,
+                    "weeks-pos"     : "right",
+                    "on-scroll"     : 1,
+                    "on-click-right": "mode",
+                    "format": {
+                              "months":     "<span color='#ffead3'><b>{}</b></span>",
+                              "days":       "<span color='#ecc6d9'><b>{}</b></span>",
+                              "weeks":      "<span color='#99ffdd'><b>W{}</b></span>",
+                              "weekdays":   "<span color='#ffcc66'><b>{}</b></span>",
+                              "today":      "<span color='#ff6699'><b><u>{}</u></b></span>"
+                              }
+                    }
     },
     "battery": {
         "format-icons": ["", "", "", "", ""],
@@ -31,8 +45,7 @@
         "states": {
             "warning": 25,
             "critical": 10
-        },
-        "tooltip": false
+        }
     },
     "custom/pkg": {
         "format": "{}",
@@ -46,6 +59,7 @@
         "format-disconnected": "",
         "tooltip": false
     },
+
     "pulseaudio": {
         "format": "{icon} {volume}%",
         "format-muted": "<span foreground='#929292'></span>",
@@ -53,8 +67,8 @@
             "default": ["<span foreground='#929292'></span>"],
             "headphones": ["<span foreground='#929292'></span>"]
         },
-        "on-scroll-up": "pamixer -ui 1 && pamixer --get-volume > $SWAYSOCK.wob",
-        "on-scroll-down": "pamixer -ud 1 && pamixer --get-volume > $SWAYSOCK.wob",
+        "on-scroll-up": "pamixer -ui 2 && pamixer --get-volume > $SWAYSOCK.wob",
+        "on-scroll-down": "pamixer -ud 2 && pamixer --get-volume > $SWAYSOCK.wob",
         "tooltip": false
     },
     "custom/vpn": {
