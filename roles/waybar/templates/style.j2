@@ -30,8 +30,14 @@ window {
 }
 
 tooltip {
-    border: 1px solid rgba(100, 114, 125, 0.5);
+    border: 1px solid @warning;
     border-radius: 5px;
+    background: @background;
+    font-size: 12px;
+}
+
+tooltip label {
+    color: @warning;
 }
 
 #workspaces {
@@ -111,6 +117,21 @@ tooltip {
 
 #battery.charging {
     color:      rgba(217, 216, 216, 1);
+}
+
+@keyframes blink {
+    to {
+        background: transparent;
+        color: transparent;
+    }
+}
+
+#battery.critical:not(.charging) {
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 #custom-storage.warning {

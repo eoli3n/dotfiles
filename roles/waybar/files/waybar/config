@@ -87,7 +87,7 @@
     "layer": "bottom",
     "position": "bottom",
 
-    "modules-left": ["tray", "custom/spotify", "custom/kubernetes"],
+    "modules-left": ["tray", "custom/spotify"],
     "modules-center": ["network#speed"],
     "modules-right": ["custom/systemd", "custom/backup", "custom/zfs-trim", "custom/zfs-scrub", "temperature", "custom/storage", "cpu", "memory" ],
     "custom/spotify": {
