@@ -1,11 +1,23 @@
 local wezterm = require 'wezterm'
 local config = {}
 
-config.font =
-  wezterm.font('JetBrains Mono', { weight = 'Light'})
+config.font = wezterm.font {
+  family = 'jetbrains mono light'
+}
+config.font_rules = {
+  {
+    intensity = 'Bold',
+    italic = false,
+    font = wezterm.font {
+      family = 'jetbrains mono light',
+    }
+  }
+}
+
 config.font_size = 10.0
 config.hide_tab_bar_if_only_one_tab = true
 config.default_cursor_style = 'BlinkingBar'
+config.front_end = "WebGpu"
 
 config.colors = {
   foreground = '{{ color7 }}',
@@ -38,7 +50,6 @@ config.colors = {
 
 config.window_background_opacity = 0.9
 config.text_background_opacity = 1
-config.window_decorations = "NONE"
 
 config.hyperlink_rules = wezterm.default_hyperlink_rules()
 return config
