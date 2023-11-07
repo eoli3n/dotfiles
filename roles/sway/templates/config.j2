@@ -29,10 +29,10 @@ gaps outer -4
 bindsym $mod+Return exec wezterm
 
 # start wofi
-bindsym $mod+Shift+d exec --no-startup-id wofi --show run -p "shell:" -L10
-bindsym $mod+d exec --no-startup-id wofi --show drun -p "app:" -L 10
-bindsym $mod+s exec --no-startup-id gopass ls --flat | wofi --dmenu -p "password:" -L 10 | xargs --no-run-if-empty gopass show -c
-bindsym $mod+Shift+s exec --no-startup-id gopass ls --flat web | wofi --dmenu -p "password:" -L 10 | xargs --no-run-if-empty gopass totp -c
+bindsym $mod+Shift+d exec --no-startup-id wofi --show run -p "shell:" -H 95%
+bindsym $mod+d exec --no-startup-id wofi --show drun -p "app:" -H 95%
+bindsym $mod+s exec --no-startup-id gopass ls --flat | wofi --dmenu -p "password:" -H 95% | xargs --no-run-if-empty gopass show -c
+bindsym $mod+Shift+s exec --no-startup-id gopass ls --flat web | wofi --dmenu -p "totp:" -H 95% | xargs --no-run-if-empty gopass totp -c
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
