@@ -53,9 +53,6 @@
     - role: mako
       tags: mako
       when: ansible_user_id != 'root'
-    - role: kitty
-      tags: kitty
-      when: ansible_user_id != 'root'
     - role: mpv
       tags: mpv
       when: ansible_user_id != 'root'
@@ -77,3 +74,6 @@
     - role: wezterm
       tags: wezterm
       when: ansible_user_id != 'root'
+    #- role: kitty
+    #  tags: kitty
+    #  when: ansible_user_id != 'root'
