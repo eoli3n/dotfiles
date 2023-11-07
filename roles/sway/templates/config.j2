@@ -224,7 +224,7 @@ exec dbus-update-activation-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
 # variery
 exec variety &
 # irc client
-exec swaymsg 'workspace $tag4; exec kitty bash -c "senpai"'
+exec swaymsg 'workspace $tag4; exec wezterm start -- bash -c "senpai"'
 # waybar exec
 exec_always ~/.config/waybar/waybar.sh &
 # wob exec
