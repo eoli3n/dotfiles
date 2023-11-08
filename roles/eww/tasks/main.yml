@@ -40,6 +40,4 @@
     src: '{{ item }}'
     dest: "$HOME/.config/eww/scripts"
   loop:
-    - get-active-workspace
     - get-workspaces
-    #- change-active-workspace
