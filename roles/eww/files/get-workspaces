@@ -1,3 +1,13 @@
 #!/bin/bash
 
-swaymsg -t get_workspaces --raw | jq -c 'map({name: .name | tostring, output: .output, icon: .name[2:]})'
+function run() {
+  swaymsg -t get_workspaces --raw | jq -c 'map({name: .name | tostring, output: .output, icon: .name[2:], focused: .focused})'
+}
+
+run
+
+swaymsg -t subscribe '["workspace"]' --monitor | {
+  while read -r; do
+    run
+  done
+}

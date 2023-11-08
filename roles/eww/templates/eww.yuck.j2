@@ -27,7 +27,7 @@
     (label :text "${current_workspace}" :visible false)
     (for workspace in workspaces
       (eventbox :onclick "swaymsg workspace ${workspace.name}"
-        (box :class "workspace-entry ${workspace.name == current_workspace ? "current" : ""}"
+        (box :class "workspace-entry ${workspace.focused ? "current" : ""}"
           (label :text "${workspace.icon}")
         )
       )

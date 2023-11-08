@@ -1,3 +1,0 @@
-#!/bin/bash
-
-swaymsg -t get_workspaces --raw | jq -r '.[] | select(.focused == true) | .name'
