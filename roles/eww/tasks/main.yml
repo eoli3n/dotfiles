@@ -29,3 +29,17 @@
       dest: eww.scss
     - src: eww.yuck.j2
       dest: eww.yuck
+
+- name: create eww scripts dir
+  file:
+    path: "$HOME/.config/eww/scripts"
+    state: directory
+
+- name: copy eww scripts
+  copy:
+    src: '{{ item }}'
+    dest: "$HOME/.config/eww/scripts"
+  loop:
+    - get-active-workspace
+    - get-workspaces
+    #- change-active-workspace

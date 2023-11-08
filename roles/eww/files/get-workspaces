@@ -1,0 +1,3 @@
+#!/bin/bash
+
+swaymsg -t get_workspaces --raw | jq -c 'map({name: .name | tostring, output: .output, icon: .name[2:]})'

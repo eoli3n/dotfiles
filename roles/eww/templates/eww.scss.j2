@@ -1,10 +1,26 @@
+$background: rgba(34, 34, 34, 0.9);
+$active: rgba(68, 68, 68, 0.8);
+$warning: rgba(243, 249, 157, 1);
+$alert: rgba(255, 92, 87, 1);
+$white: rgba(239, 240, 235, 1);
+$darkgrey: rgba(73, 73, 73, 1);
+$grey: rgba(146, 146, 146, 1);
+$red: rgba(255, 92, 87, 1);
+$yellow: rgba(243, 249, 157, 1);
+$blue: rgba(10, 108, 245, 1);
+$purple: rgba(159, 120, 255, 1);
+$green: rgba(90, 247, 142, 1);
+$cyan: rgba(154, 237, 254, 1);
+
 * {
   all: unset; //Unsets everything so you can style everything from scratch
+  font-family: "jetbrains mono light", "FontAwesome6FreeRegular", "FontAwesome6FreeSolid", "FontAwesome6Brands";
+  font-size: 12px;
 }
 
 //Global Styles
 .bartop {
-  background-color: #3a3a3a;
+  background-color: $background;
   color: #b0b4bc;
   padding: 10px;
 }
@@ -49,6 +65,16 @@
 .label-ram {
   font-size: large;
 }
-.workspaces button:hover {
-  color: #D35D6E;
+.workspaces {
+  padding-right: 30px;
+}
+.workspace-entry label {
+  padding:    0px 10px;
+  color:      $white;
+  min-width:  20px;
+  border-top: 1px solid transparent;
+  border-bottom: 2px solid transparent;
+}
+.workspace-entry.current label {
+  border-bottom: 2px solid $yellow;
 }
