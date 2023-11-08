@@ -56,7 +56,7 @@
 
 
 (deflisten music :initial ""
-  "playerctl --follow metadata --format '{{ artist }} - {{ title }}' || true")
+  "playerctl --follow metadata --format '{% raw %}{{ artist }} - {{ title }}{% endraw %}' || true")
 
 (defpoll volume :interval "1s"
   "scripts/getvol")
