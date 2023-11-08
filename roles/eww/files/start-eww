@@ -1,0 +1,5 @@
+#!/bin/bash
+
+EWW="$HOME/dev/eww/target/release/eww"
+$EWW --restart daemon
+$EWW open bartop

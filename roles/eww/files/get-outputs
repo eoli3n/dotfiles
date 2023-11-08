@@ -1,0 +1,13 @@
+#!/bin/bash
+
+function run() {
+  swaymsg -t get_outputs | jq -rc 'to_entries | map({name: .value.name, id: .key, active: .value.active})'
+}
+
+run
+
+swaymsg -t subscribe '["workspace"]' --monitor | {
+  while read -r; do
+    run
+  done
+}

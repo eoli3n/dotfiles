@@ -41,3 +41,5 @@
     dest: "$HOME/.config/eww/scripts"
   loop:
     - get-workspaces
+    - get-outputs
+    - start-eww
