@@ -140,6 +140,10 @@ bindsym $mod+Control+left exec playerctl -p spotify previous
 bindsym $mod+Control+down exec playerctl -p spotify play-pause
 bindsym $mod+Control+right exec playerctl -p spotify next
 
+# switch to prev/next workspace
+bindsym $mod+Alt+Left workspace prev
+bindsym $mod+Alt+Right workspace next
+
 # switch to workspace
 bindsym $mod+ampersand workspace $tag1
 bindsym $mod+eacute workspace $tag2
