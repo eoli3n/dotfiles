@@ -1,8 +1,4 @@
 ---
-- name: install powerline-status with pip
-  pip:
-    name: powerline-status
-
 - name: configure tmux
   template:
     src: tmux.conf.j2
