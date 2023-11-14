@@ -7,19 +7,19 @@ displays:
     mode: 1920x1080
     scale: 1.6
   - name: screen1
-    id: DP-7
+    id: DP-8
     x: 0
     y: 0
     mode: 1920x1080
     scale: 1
   - name: screen2
-    id: DP-5
+    id: DP-6
     mode: 1920x1080
     x: 1920
     y: 0
     scale: 1
-  - name: screen2
-    id: DP-6
+  - name: screen3
+    id: DP-7
     mode: 1920x1080
     x: 3840
     y: 0

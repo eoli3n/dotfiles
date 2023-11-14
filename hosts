@@ -1,4 +1,3 @@
 [cli]
 [desktop]
-osz ansible_connection=local
-
+work ansible_connection=local

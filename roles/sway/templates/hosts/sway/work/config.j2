@@ -3,6 +3,7 @@
 set $laptop "{{ (displays | selectattr('name', 'eq', 'laptop')).0.id }}"
 set $screen1 "{{ (displays | selectattr('name', 'eq', 'screen1')).0.id }}"
 set $screen2 "{{ (displays | selectattr('name', 'eq', 'screen2')).0.id }}"
+set $screen3 "{{ (displays | selectattr('name', 'eq', 'screen3')).0.id }}"
 
 # dpms
 output * dpms on
