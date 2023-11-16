@@ -7,19 +7,19 @@ displays:
     mode: 1920x1080
     scale: 1.6
   - name: screen1
-    id: DP-8
+    id: 'Dell Inc. DELL P2717H 4P9HC65J171S'
     x: 0
     y: 0
     mode: 1920x1080
     scale: 1
   - name: screen2
-    id: DP-6
+    id: 'Dell Inc. DELL P2717H 4P9HC65JAN9S'
     mode: 1920x1080
     x: 1920
     y: 0
     scale: 1
   - name: screen3
-    id: DP-7
+    id: 'Dell Inc. DELL P2717H 4P9HC65J158S'
     mode: 1920x1080
     x: 3840
     y: 0
