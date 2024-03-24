@@ -26,7 +26,7 @@ gaps inner 4
 gaps outer -4
 
 # start a terminal
-bindsym $mod+Return exec wezterm
+bindsym $mod+Return exec kitty
 
 # start wofi
 bindsym $mod+Shift+d exec --no-startup-id wofi --show run -p "shell:" -H 95%
@@ -229,7 +229,7 @@ exec dbus-update-activation-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
 # variery
 exec variety &
 # irc client
-exec swaymsg 'workspace $tag4; exec wezterm start -- bash -c "senpai"'
+exec swaymsg 'workspace $tag4; exec kitty bash -c "senpai"'
 # waybar exec
 exec_always ~/.config/waybar/waybar.sh &
 # wob exec
