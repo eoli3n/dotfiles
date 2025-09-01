@@ -5,7 +5,9 @@
     state: directory
 
 - name: Configure GTK3
-  shell: gsettings set org.gnome.desktop.interface gtk-theme Adwaita-dark
+  shell: |
+    gsettings set org.gnome.desktop.interface gtk-theme Adwaita-dark
+    gsettings set org.gnome.desktop.interface color-scheme "prefer-dark"
 
 - name: Configure GTK2
   template:
