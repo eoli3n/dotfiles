@@ -240,6 +240,8 @@ exec mkfifo $SWAYSOCK.wob && tail -f $SWAYSOCK.wob | wob
 #exec swayidle timeout 30 "makoctl set-mode away" resume "makoctl set-mode default"
 # set gtk theme
 exec_always ~/.config/sway/import-gsettings
+# gammastep
+exec_always bash -c "pidof -x gammastep-indicator || gammastep-indicator"
 
 # reload the configuration file
 bindsym $mod+Shift+r reload

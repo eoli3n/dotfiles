@@ -57,3 +57,12 @@
     src: zoomus.conf
     dest: /home/user/.var/app/us.zoom.Zoom/config/zoomus.conf
 
+- name: create gammastep config dir
+  file:
+    path: ~/.config/gammastep/
+    state: directory
+
+- name: configure gammastep
+  copy:
+    src: config.ini
+    dest: ~/.config/gammastep/config.ini
