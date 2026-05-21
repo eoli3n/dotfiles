@@ -7,9 +7,9 @@
 
 - hosts: cli:desktop
   roles:
-    - role: runit
-      tags: runit
-      when: ansible_service_mgr == "runit"
+    #- role: runit
+    #  tags: runit
+    #  when: ansible_facts["service_mgr"] == "runit"
     - role: fish
       tags: fish
     - role: neovim

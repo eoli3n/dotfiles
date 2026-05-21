@@ -1,16 +1,16 @@
 ---
-- name: create service dir
-  file:
-    path: ~/service
-    state: directory
-
-- name: set svdir in fish
-  copy:
-    src: runit.fish
-    dest: ~/.config/fish/conf.d/
-
-- name: user services
-  synchronize:
-    src: service/
-    dest: ~/service
-  ignore_errors: yes
+#- name: create service dir
+#  file:
+#    path: ~/service
+#    state: directory
+#
+#- name: set svdir in fish
+#  copy:
+#    src: runit.fish
+#    dest: ~/.config/fish/conf.d/
+#
+#- name: user services
+#  synchronize:
+#    src: service/
+#    dest: ~/service
+#  ignore_errors: yes
