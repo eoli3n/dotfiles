@@ -52,10 +52,10 @@
     src: config
     dest: ~/.config/xdg-desktop-portal-wlr/config
 
-- name: configure zoom for wayland sharing
-  copy:
-    src: zoomus.conf
-    dest: /home/user/.var/app/us.zoom.Zoom/config/zoomus.conf
+#- name: configure zoom for wayland sharing
+#  copy:
+#    src: zoomus.conf
+#    dest: /home/user/.var/app/us.zoom.Zoom/config/zoomus.conf
 
 - name: create gammastep config dir
   file:
