@@ -1,5 +1,10 @@
 ---
+- name: create .gnupg dir
+  file:
+    path: ~/.gnugp
+    state: directory
+
 - name: configure gtk pinentry
   copy:
     src: gpg-agent.conf
-    dest: ~/.gnupg
+    dest: ~/.gnupg/
