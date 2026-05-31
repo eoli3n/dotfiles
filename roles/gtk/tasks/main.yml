@@ -14,6 +14,21 @@
     src: gtkrc-2.0.j2
     dest: ~/.gtkrc-2.0
 
+- name: Create gtk4 conf dir
+  file:
+    path: ~/.config/gtk-4.0/
+    state: directory
+
+- name: Configure GTK4
+  copy:
+    dest: ~/.config/gtk-4.0/settings.ini
+    content: |
+      [Settings]
+      gtk-theme-name=Adwaita-dark
+      gtk-application-prefer-dark-theme=1
+      gtk-cursor-theme-name=Adwaita
+      gtk-icon-theme-name=Adwaita
+
 - name: Configure Qt as GTK theme
   copy:
     src: Trolltech.conf
