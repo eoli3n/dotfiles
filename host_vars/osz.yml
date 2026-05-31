@@ -2,7 +2,7 @@
 displays:
   - name: laptop
     id: eDP-1
-    x: 548
+    x: 547
     y: 1388
     mode: 1920x1200
     scale: 1.4
