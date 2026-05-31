@@ -19,5 +19,5 @@ profile {
 }
 
 profile {
-    output "{{ (displays | selectattr('name', 'eq', 'laptop')).0.id }}" position 0,0 mode {{ (displays | selectattr('name', 'eq', 'laptop')).0.mode }} scale {{ (displays | selectattr('name', 'eq', 'laptop')).0.scale }}
+    output "{{ (displays | selectattr('name', 'eq', 'laptop')).0.id }}" position 0,0 mode {{ (displays | selectattr('name', 'eq', 'laptop')).0.mode }} scale {{ (displays | selectattr('name', 'eq', 'laptop')).0.onedisplayscale }}
 }

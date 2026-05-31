@@ -4,8 +4,9 @@ displays:
     id: eDP-1
     x: 548
     y: 1388
-    mode: 1920x1080
+    mode: 1920x1200
     scale: 1.4
+    onedisplayscale: 1.2
   - name: screen1
     id: 'HP Inc. HP E24 G4 CN421202YN'
     x: 1920
