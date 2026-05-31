@@ -1,3 +1,6 @@
 ---
 - name: set default app for directories
-  shell: xdg-mime default nemo.desktop inode/directory
+  shell: |
+    xdg-mime default nemo.desktop inode/directory
+    xdg-mime default firefox.desktop x-scheme-handler/http
+    xdg-mime default firefox.desktop x-scheme-handler/https
