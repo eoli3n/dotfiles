@@ -3,6 +3,7 @@
   file:
     path: ~/.gnugp
     state: directory
+    mode: 0700
 
 - name: configure gtk pinentry
   copy:
