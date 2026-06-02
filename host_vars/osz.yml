@@ -10,7 +10,7 @@ displays:
   - name: screen1
     id: 'HP Inc. HP E24 G4 CN421202YN'
     x: 1920
-    y: 1080
+    y: 700
     mode: 1920x1080
     scale: 1
   - name: screen2
